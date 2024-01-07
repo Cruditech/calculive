@@ -9,7 +9,9 @@ See a detailed walk-through of this sample app on the [Express Quickstart](https
 1. Install the dependencies with npm:
 
 ```bash
-npm install
+* npm install -g gulp-cli
+* npm install
+* gulp
 ```
 
 

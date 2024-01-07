@@ -39,6 +39,15 @@ app.use(function (req, res, next) {
 
 app.use('/', router);
 
+app.use('/api', function (req, res) {
+  const searchTerm = encodeURIComponent(req.query.q);
+  fetch('https://api.ods.od.nih.gov/dsld/v9/search-filter?q=' + searchTerm)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+  res.send({ msg: 'Your access token was successfully validated!' });
+});
+
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
   const err = new Error('Not Found');
@@ -49,6 +58,17 @@ app.use(function (req, res, next) {
 // Error handlers
 app.use(function (err, req, res, next) {
   res.status(err.status || 500);
+  if (err.status === 404) {
+    return res.render('404', {
+      message: err.message,
+      error: process.env.NODE_ENV !== 'production' ? err : {}
+    });
+  } else if (err.status === 500) {
+    return res.render('500', {
+      message: err.message,
+      error: process.env.NODE_ENV !== 'production' ? err : {}
+    });
+  }
   res.render('error', {
     message: err.message,
     error: process.env.NODE_ENV !== 'production' ? err : {}
