@@ -1,61 +1,52 @@
-# Express OpenID Connect Webapp Sample
+# CalcuLive
+## Purpose
+## Requirements
+* Search for products by keyword [GET /browse-products](https://api.ods.od.nih.gov/dsld/v9/#browseProducts) → **List\<DSLD (label) ID\>**
+* [GET /label/{dsldId}](https://api.ods.od.nih.gov/dsld/v9/#getLabel) → [Label](https://api.ods.od.nih.gov/dsld/v9/#Label)
 
-This sample demonstrates authentication for an Express Node.js app. The sample quickly shows how to log in, log out, and view profile information of the logged-in user.
+## Data Schemas
+###### user.ingredients_by_product<List>
+fullName | brandName+brandIpSymbol | ingredientRows | otheringredients.ingredients 
+-|-|-|-
+string | string | list | list
 
-See a detailed walk-through of this sample app on the [Express Quickstart](https://auth0.com/docs/quickstart/webapp/express).
+###### user.ingredient_totals
+
+
 
 ## Running This Sample Locally
 
-1. Install the dependencies with npm:
+#### Install the dependencies with npm
 
 ```bash
-* npm install -g gulp-cli
-* npm install
-* gulp
+$ npm install
 ```
 
 
-2. Rename `.env.example` to `.env` and replace or check the following values. 
-
-> ⚠️ Note: If you downloaded this sample app directly from Auth0 Manage Dashboard, or from Auth0 Docs _and_ you chose the Auth0 application you're creating this sample for, then you can check these are configured already: 
-
-- `CLIENT_ID` - your Auth0 application client id
-- `ISSUER_BASE_URL` - absolute URL to your Auth0 application domain (ie: `https://accountName.auth0.com`)
-- `SECRET` - a randomly rengerated string. You can generate one on the command line with the following `openssl rand -hex 32`
-
+#### Inject environment variables and run app
+###### Option A
+Install [doppler](https://dashboard.doppler.com/workplace/02491f71b74d63f6280c/projects) with
 ```bash
-mv .env.example .env
+$ (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sudo sh
+```
+Login, setup, run
+```doppler
+$ doppler login
+$ doppler setup
+$ doppler run -- npm start
 ```
 
-3. Run the sample app:
+###### Option B
+Write the following to **.env** file
+key|value
+-|-
+CLIENT_ID|Auth0 application client id
+ISSUER_BASE_URL|https://auth.cruditech.com
+SECRET|`$ openssl rand -hex 32`
+BASE_URL|port:3000 url
+PORT|3000
+MONGODB_URL|\<instance name\>.mongodb.net
+MONGODB_USERNAME|********
+MONGODB_PASSWORD|********
+|
 
-```bash
-npm start
-```
-
-The sample app will be served at `localhost:3000`.
-
-## Support + Feedback
-
-Please use the [Issues queue](https://github.com/auth0-samples/calculive/issues) in this repo for questions and feedback.
-
-## Vulnerability Reporting
-
-Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
-
-## What is Auth0?
-
-Auth0 helps you to easily:
-
-- implement authentication with multiple identity providers, including social (e.g., Google, Facebook, Microsoft, LinkedIn, GitHub, Twitter, etc), or enterprise (e.g., Windows Azure AD, Google Apps, Active Directory, ADFS, SAML, etc.)
-- log in users with username/password databases, passwordless, or multi-factor authentication
-- link multiple user accounts together
-- generate signed JSON Web Tokens to authorize your API calls and flow the user identity securely
-- access demographics and analytics detailing how, when, and where users are logging in
-- enrich user profiles from other data sources using customizable JavaScript rules
-
-[Why Auth0?](https://auth0.com/why-auth0)
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.

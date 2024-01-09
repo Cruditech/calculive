@@ -1,0 +1,222 @@
+{
+    "src": "01-raw/2022-10-25/data/label_25.json",
+    "id": 25,
+    "nhanesId": "",
+    "bundleName": "",
+    "fullName": "Vitamins For The Hair",
+    "brandName": "Nature's Bounty",
+    "brandIpSymbol": "®",
+    "upcSku": "0 74312 02100 8",
+    "productVersionCode": "Prod. No. 2100 05A B2101",
+    "pdf": "",
+    "thumbnail": "",
+    "servingsPerContainer": null,
+    "hasOuterCarton": false,
+    "percentDvFootnote": "Not Present",
+    "labelRelationships": [],
+    "contacts": [
+        {
+            "contactId": 2212,
+            "text": "Visit us on the Web",
+            "types": [
+                "Other"
+            ],
+            "contactDetails": {
+                "src": "01-raw/2022-10-25/data/contact_1.json",
+                "id": 2212,
+                "name": "",
+                "streetAddress": "",
+                "city": "",
+                "state": "",
+                "country": "",
+                "zipCode": "",
+                "phoneNumber": "",
+                "email": "",
+                "webAddress": "www.NaturesBounty.com"
+            }
+        }
+    ],
+    "netContents": [
+        {
+            "order": 1,
+            "quantity": 65,
+            "unit": "Tablet(s)",
+            "display": "65 Tablet(s)"
+        }
+    ],
+    "physicalState": {
+        "langualCode": "E0155",
+        "langualCodeDescription": "Tablet or Pill"
+    },
+    "servingSizes": [
+        {
+            "order": 1,
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "minDailyServings": 1,
+            "maxDailyServings": 1,
+            "unit": "Tablet(s)",
+            "inSFB": true
+        }
+    ],
+    "targetGroups": [
+        "Vegetarian",
+        "Adult (18 - 50 Years)"
+    ],
+    "productType": {
+        "langualCode": "A1325",
+        "langualCodeDescription": "Other Combinations"
+    },
+    "statements": [
+        {
+            "type": "FDA Statement of Identity",
+            "notes": "DIETARY SUPPLEMENT"
+        },
+        {
+            "type": "General Statements: All Other Content",
+            "notes": "Provides a combination of nutrients consistently found in healthy hair."
+        },
+        {
+            "type": "Seals/Symbols",
+            "notes": "NATURE'S BOUNTY(R)"
+        },
+        {
+            "type": "Precautions re: All Other",
+            "notes": "Avoid this product if you have Wilson's disease or are allergic to yeast."
+        }
+    ],
+    "claims": [
+        {
+            "langualCode": "P0115",
+            "langualCodeDescription": "All Other"
+        }
+    ],
+    "events": [
+        {
+            "date": "2011-01-01",
+            "type": "Off Market"
+        },
+        {
+            "date": "2012-01-25",
+            "type": "Date entered into DSLD"
+        }
+    ],
+    "userGroups": [
+        {
+            "dailyValueTargetGroupName": "Adults and children 4 or more years of age",
+            "langualCode": "P0250",
+            "langualCodeDescription": "Adults and Children 4 years and above"
+        }
+    ],
+    "ingredientRows": [
+        {
+            "order": 1,
+            "ingredientId": 280871,
+            "description": null,
+            "notes": "Pantothenic Acid (Form: as D-Calcium Pantothenate) ",
+            "quantity": [
+                {
+                    "servingSizeOrder": 1,
+                    "servingSizeQuantity": 1,
+                    "operator": "=",
+                    "quantity": 100,
+                    "unit": "mg",
+                    "dailyValueTargetGroup": [
+                        {
+                            "name": "Adults and children 4 or more years of age",
+                            "operator": "=",
+                            "percent": 1000,
+                            "footnote": null
+                        }
+                    ],
+                    "servingSizeUnit": "Tablet(s)"
+                }
+            ],
+            "nestedRows": [],
+            "name": "Pantothenic Acid",
+            "category": "vitamin",
+            "ingredientGroup": "Pantothenic Acid (Vitamin B5)",
+            "uniiCode": "19F5HK2737",
+            "alternateNames": [],
+            "forms": [
+                {
+                    "order": 1,
+                    "ingredientId": 293281,
+                    "prefix": null,
+                    "percent": null,
+                    "name": "D-Calcium Pantothenate"
+                }
+            ]
+        },
+        {
+            "order": 2,
+            "ingredientId": 292597,
+            "description": null,
+            "notes": null,
+            "quantity": [
+                {
+                    "servingSizeOrder": 1,
+                    "servingSizeQuantity": 1,
+                    "operator": "=",
+                    "quantity": 5,
+                    "unit": "mg",
+                    "dailyValueTargetGroup": [
+                        {
+                            "name": "Adults and children 4 or more years of age",
+                            "operator": "<",
+                            "percent": 1,
+                            "footnote": null
+                        }
+                    ],
+                    "servingSizeUnit": "Tablet(s)"
+                }
+            ],
+            "nestedRows": [],
+            "name": "Sodium",
+            "category": "mineral",
+            "ingredientGroup": "Sodium",
+            "uniiCode": "9NEZ333N27",
+            "alternateNames": [
+                "Na"
+            ],
+            "forms": []
+        }
+    ],
+    "otheringredients": {
+        "text": null,
+        "ingredients": [
+            {
+                "order": 1,
+                "ingredientId": 15302,
+                "name": "Cellulose",
+                "category": "fiber",
+                "ingredientGroup": "Cellulose",
+                "uniiCode": null,
+                "alternateNames": [],
+                "forms": []
+            },
+            {
+                "order": 2,
+                "ingredientId": 18961,
+                "name": "Dicalcium Phosphate",
+                "category": "mineral",
+                "ingredientGroup": "Calcium",
+                "uniiCode": null,
+                "alternateNames": [],
+                "forms": []
+            },
+            {
+                "order": 3,
+                "ingredientId": 3690,
+                "name": "Croscarmellose",
+                "category": "other",
+                "ingredientGroup": "Croscarmellose",
+                "uniiCode": null,
+                "alternateNames": [],
+                "forms": []
+            }
+        ]
+    },
+    "offMarket": 1,
+    "entryDate": "2012-01-25"
+  }
