@@ -1,4 +1,4 @@
-l# CalcuLive
+![CalcuLive](/public/assets/img/logo/calculiverounded.png)
 ## Purpose
 ## Requirements
 * Search for products by keyword [GET /browse-products](https://api.ods.od.nih.gov/dsld/v9/#browseProducts) → **List\<DSLD (label) ID\>**
@@ -48,7 +48,10 @@ PORT|3000
 MONGODB_URL|\<instance name\>.mongodb.net
 MONGODB_USERNAME|********
 MONGODB_PASSWORD|********
-|
+
+## System Design
+![CalcuLive System Diagram](/public/assets/img/calculiveroundedsysdiagram.png)
+
 ## Visual Design
 
 ### Color Palette
