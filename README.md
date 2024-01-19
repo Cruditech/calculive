@@ -49,4 +49,15 @@ MONGODB_URL|\<instance name\>.mongodb.net
 MONGODB_USERNAME|********
 MONGODB_PASSWORD|********
 |
+## Visual Design
+
+### Color Palette
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| turqoise | ![#0BDED0](https://via.placeholder.com/20/0BDED0?text=+) #0BDED0 |
+| medium slate blue | ![#9860F3](https://via.placeholder.com/20/9860F3?text=+) #9860F3 |
+| tangerine | ![#F58A07](https://via.placeholder.com/20/F58A07?text=+) #F58A07 |
+| berkeley blue | ![#052F5F](https://via.placeholder.com/20/052F5F?text=+) #052F5F |
+| rich black | ![#0D1F2D](https://via.placeholder.com/20/0D1F2D?text=+) #0D1F2D |
 
